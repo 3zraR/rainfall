@@ -1,0 +1,14 @@
+rainfall = { } 
+mm = 0
+while True :
+    city_name = input("Enter the name of the city:")
+    if not city_name:
+        break
+    
+    mm = int(input("How much rain has fallen in mm:"))
+
+    rainfall[city_name] = rainfall.get(city_name, 0) + (mm)
+
+ 
+    
+print(rainfall)
